@@ -1,0 +1,24 @@
+{
+  "name": "indiscernable-zones",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browserify": "browserify",
+    "watchify": "watchify",
+    "build": "browserify index.js -o bundle.js",
+    "watch": "watchify index.js -o bundle.js --debug --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserify": { "transform": [["reactify", { "es6": true }]] },
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "watchify": "^3.4.0",
+    "reactify": "^1.1.1"
+  }
+}
